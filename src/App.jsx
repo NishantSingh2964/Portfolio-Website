@@ -1,4 +1,3 @@
-
 import './App.css'
 import Cerificates from './components/Certificates/Cerificates'
 import AboutMe from './components/AboutMe/AboutMe'
