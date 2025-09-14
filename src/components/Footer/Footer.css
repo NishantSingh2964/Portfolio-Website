@@ -1,0 +1,90 @@
+.copyright{
+    background: var(--accent-clr);
+    padding-block: 2rem;
+}
+
+.copyright p{
+    color: var(--fixed-clr);
+    font-weight: 600;
+}
+
+footer h2 {
+  white-space: nowrap;   
+}
+
+.p-block-7{
+    padding-block: 7rem;
+}
+
+.p-block-2{
+    padding-block: 2rem;
+}
+
+.footer-wrapper{
+    flex: 1;
+    flex-basis: 150px;
+}
+
+.footer-wrapper:nth-child(1){
+    flex: 2;
+    flex-basis: 300px;
+}
+
+.footer-wrapper:nth-child(1) p{
+    max-width: 350px;
+}
+
+.footer-wrapper h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.footer-input {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.email-field {
+  flex: 1;                   /* take all available space */
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem 0 0 0.6rem;
+  font-size: 1rem;
+  background: var(--surface-clr);
+  color: var(--text-secondary-clr);
+  line-height: 1.4;           /* keeps it readable */
+}
+
+.email-field:focus {
+  border: 1.5px solid var(--accent-clr);
+  outline: none;    /* remove browser default */
+}
+
+
+
+.input-btn {
+  background: var(--accent-clr);
+  color: var(--fixed-clr);
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-btn:hover{
+    background: var(--text-primary-clr);
+}
+

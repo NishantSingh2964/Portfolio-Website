@@ -1,0 +1,25 @@
+.border-btm{ 
+    border-top: 0.1rem solid rgba(123, 123, 123, 0.2); 
+}
+
+.about-image,
+.about-content{
+    flex: 1;
+    flex-basis: 300px;
+    font-weight: 600;
+}
+
+h6{
+    font-size: 2rem;
+    color: var(--accent-clr);
+    text-align: center;
+}
+
+.m-block-3{
+    margin-block: 3rem;
+}
+
+.border-bottom{
+  border-bottom: 0.1rem solid rgba(123, 123, 123, 0.2);
+}
+

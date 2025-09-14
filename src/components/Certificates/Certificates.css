@@ -1,0 +1,25 @@
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent-clr);
+  color: var(--background-clr);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5; /* ✅ ensures arrows stay visible */
+  transition: background 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: #333;
+}
+
+/* Fixed box for equal size */
+
+
+@media (max-width: 750px){
+    .arrow-btn{
+        display: none;
+    }
+}

@@ -1,0 +1,141 @@
+.services-section {
+  margin-top: 6rem; 
+
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+  color: var(--text-primary-clr);
+}
+
+.overlay-text {
+  position: relative;
+}
+
+.overlay-text::before {
+  content: attr(datatype);
+  position: absolute;
+  top: -70%;
+  left: -60%;
+  font-size: 6rem;
+  color: var(--text-primary-clr);
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: -1;
+  opacity: 0.08;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px; /* ensures responsive wrapping */
+  display: flex;
+  flex-direction: column;  /* stack content vertically */
+  justify-content: space-between; /* push link to bottom */
+  padding: 1.5rem;
+  background: var(--surface-clr);
+  border: 0.1rem solid rgba(123, 123, 123, 0.2);
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  /* transform: translateY(4px); */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.link {
+  color: var(--text-secondary-clr);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+  margin-top: auto; 
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+h4 {
+  font-size: 2rem;
+  color: var(--text-primary-clr);
+  font-weight: 500;
+}
+
+.service-icon {
+  width: 4rem;
+  height: 4rem; 
+  font-size: 1.8rem;
+  color: var(--text-primary-clr);
+  background: var(--background-clr); 
+  border: 0.1rem solid rgba(123, 123, 123, 0.2);
+
+  display: flex;                
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;           
+  margin-bottom: 1rem;          
+}
+
+.arrow {
+  margin-top: 3px;
+  vertical-align: middle;
+}
+
+.m-block-1 {
+  margin-block: 1rem;
+}
+
+.stretch {
+  align-items: stretch; 
+}
+
+.hide-text{
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.design{
+    position: relative;
+    
+}
+
+.design::before{
+  content: " ";
+  position: absolute;
+  background: var(--accent-clr);
+  inset:2rem 0 7rem -0.6rem;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.border-btm{
+  margin-top: 6rem;
+  border-top: 0.1rem solid rgba(123, 123, 123, 0.2);
+}
+
+@media (max-width: 800px) {
+    h2{
+        font-size: 2.2rem;
+    }
+
+    .overlay-text::before{
+      font-size: 4rem;
+      left: -30%;
+      top: 30%;
+    }
+
+    .p-block-9{
+      padding-block: 5rem;
+    }
+}

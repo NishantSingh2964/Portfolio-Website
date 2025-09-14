@@ -1,0 +1,69 @@
+form {
+  flex: 2; /* wider form */
+}
+
+.info {
+  flex: 1; /* details card takes 1/3 */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* stretch with form */
+}
+
+.detail {
+  flex: 1;
+  background: var(--surface-clr);
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+  border: 0.1rem solid rgba(123, 123, 123, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* 🔥 spacing between Address, Contact, Time */
+}
+
+.detail h6 {
+  font-size: 1.5rem;
+  text-align: start;
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* space between heading and text */
+}
+
+.rounded-b {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.rounded-b h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem; /* spacing under heading */
+}
+
+.bg-header {
+  background-image: url('../../assets/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--fixed-clr); /* ensure text is readable */
+}
+
+.icon-container {
+  color: var(--accent-clr);
+  background: var(--surface-clr);
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.icon-container:hover {
+  background: var(--accent-clr);
+  color: var(--background-clr);
+}
+
+.auto-type {
+  white-space: nowrap;
+  display: inline;
+}
+

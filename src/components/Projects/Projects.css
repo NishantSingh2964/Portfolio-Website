@@ -1,0 +1,126 @@
+h2 {
+  font-weight: 500;
+  flex-basis: 300px;
+}
+
+.project-image,
+.project-content {
+  flex: 1;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;   /* stretch children same height */
+  gap: 2rem;
+  background: rgba(123, 123, 123, 0.06);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* project image wrapper */
+.card1 .project-image {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/* project image itself */
+.card1 .project-image img {
+  width: 100%;
+  height: 100%;        /* fill parent */
+  object-fit: cover;   /* crop to fit */
+  border-radius: 1rem;
+  margin: 0;           /* remove top gap */
+}
+
+.card1 .project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.card1 .project-content h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary-clr);
+  margin-bottom: 0.5rem;
+}
+
+.card1 .project-content .para {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary-clr);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--text-primary-clr);
+}
+
+.rotate{
+    transform: rotate(-45deg);
+    transform: .3s ease-in-out;
+}
+
+.rotate:hover{
+    transform: rotate(0);
+}
+.card1:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.list {
+  padding: 0.6rem 1.2rem;
+  background: var(--accent-clr);
+  color: var(--fixed-clr);
+  border-radius: 100vw;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card1 {
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;              /* reduced padding */
+    margin-bottom: 1.5rem;      /* reduced spacing between cards */
+  }
+
+  .card1 .project-image {
+    max-width: 100%;
+  }
+
+  .card1 .project-content {
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  .project:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .card1 ul {
+    display: flex;
+    flex-wrap: wrap;            /* keep in a row with wrapping */
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .list {
+    padding: 0.5rem 1rem;       /* smaller pills */
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+}

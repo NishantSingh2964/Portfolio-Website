@@ -1,0 +1,64 @@
+.headline {
+  background: var(--accent-clr);
+  width: 100%;
+  overflow: hidden; /* hide overflow */
+  padding-block: 1rem; /* vertical padding for breathing room */
+}
+
+.moving-text {
+  display: flex;
+  width: max-content;      
+  animation: marquee 15s linear infinite;
+  padding-inline: 2rem; /* horizontal padding for big screens */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-inline: 2rem;
+  z-index: 99; /* space inside each container */
+}
+
+.container h5 {
+  color: var(--fixed-clr);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.container .star {
+  font-size: 1.5rem;
+  color: var(--fixed-clr);
+}
+
+/* Animation */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+/* ✅ Small screens */
+@media (max-width: 790px) {
+  .headline {
+    padding-block: 0.6rem; /* slightly less vertical padding */
+  }
+
+  .moving-text {
+    padding-inline: 1rem; /* smaller side padding */
+  }
+
+  .container {
+    gap: 1rem;
+    padding-inline: 1rem; /* reduced padding per container */
+  }
+
+  .container h5 {
+    font-size: 1.2rem;
+  }
+
+  .container .star {
+    font-size: 1rem;
+  }
+}
