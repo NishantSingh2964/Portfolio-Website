@@ -7,7 +7,7 @@ import Headline from './components/Headline/Headline'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
-import Services from './components/services/services'
+import Services from "./components/services/Services.jsx";
 import Skills from './components/Skills/Skills'
 import Footer from './components/Footer/Footer'
 
