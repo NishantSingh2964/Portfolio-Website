@@ -34,8 +34,18 @@ h1 {
   margin: 0.5rem 0;
 }
 
+/* keep name in one line */
 .green-text {
   color: var(--accent-clr);
+  white-space: nowrap;
+}
+
+/* stabilize auto-type */
+.auto-type {
+  display: inline-block;
+  min-width: 220px;   /* reserve width for longest text */
+  text-align: left;
+  vertical-align: top;
 }
 
 p {
@@ -54,10 +64,6 @@ p {
   border: 2px solid var(--text-secondary-clr);
 }
 
-
-
-
-
 /* ========== Responsive Styles ========== */
 @media (max-width: 1024px) {
   h1 {
@@ -67,6 +73,10 @@ p {
 
   p {
     font-size: 0.9rem;
+  }
+
+  .auto-type {
+    min-width: 180px;
   }
 }
 
@@ -81,8 +91,8 @@ p {
   }
 
   h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2.3rem;
+    line-height: 2.7rem; /* tighter line height for mobile */
   }
 
   p {
@@ -93,7 +103,7 @@ p {
 
   .hero-image {
     height: auto;
-    max-height: 350px;
+    max-height: 300px;
     margin-top: 2rem;
   }
 
@@ -104,7 +114,11 @@ p {
 
   .flex.gap-6 {
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
     flex-wrap: wrap;
+  }
+
+  .auto-type {
+    min-width: 160px;
   }
 }
