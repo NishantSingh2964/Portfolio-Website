@@ -120,7 +120,7 @@ const projectsData = [
         title: "Digital Course Purchasing App",
         Description: "A Digital Course Purchasing App that allows users to browse, purchase, and access online courses with secure payments, user-friendly UI, and real-time progress tracking.",
         image: Project6,
-        src: 'https://github.com/NishantSingh2964/Digital-Course-Purchase-App',
+        src: 'https://github.com/NishantSingh2964/Edemy',
         tech: [
             {
                 id: 1,
